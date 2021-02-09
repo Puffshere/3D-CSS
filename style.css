@@ -36,6 +36,10 @@ body {
     justify-content: center;
 }
 
+.title {
+    letter-spacing: 5px;
+}
+
 .sneaker img {
     width: 20rem;
     z-index: 2;
@@ -47,8 +51,8 @@ body {
     height: 15rem;
     background: linear-gradient(
         to right,
-        rgba(245,70,66,0.75),
-        rgba(8,83,156,0.75)
+        #264653,
+        #e76f51
     );
     position: absolute;
     border-radius: 50%;
@@ -71,6 +75,7 @@ body {
 .sizes {
     display: flex;
     justify-content: space-between;
+    text-align: center;
     transition: all 0.75s ease-out;
 }
 
@@ -91,13 +96,14 @@ button.active {
 
 .purchase {
     margin-top: 5rem;
-    transition: all 0.75s ease-out;
 }
 
 .purchase button {
+    transition: all 0.75s ease-out;
+    letter-spacing: 3px;
     width: 100%;
     padding: 1rem 0rem;
-    background: #f54642;
+    background:  #e76f51;
     color: white;
     cursor: pointer;
     border-radius: 30px;
