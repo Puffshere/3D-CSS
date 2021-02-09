@@ -1,1 +1,0 @@
-This is a folder you can use to keep your website's images in.
