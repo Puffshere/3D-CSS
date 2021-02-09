@@ -13,7 +13,7 @@ container.addEventListener("mousemove", (e) => {
 });
 
 container.addEventListener("mouseenter", (e) => {
-    card.style.transition = "none";
+    card.style.transition = "all 0.5s ease";
     title.style.transform = "translateZ(150px)";
     sneaker.style.transform = "translateZ(200px) rotateZ(-20deg)";
     description.style.transform = "translateZ(125px)";
