@@ -10,6 +10,7 @@ const rolesA = document.querySelector(".a");
 const rolesB = document.querySelector(".b");
 const rolesD = document.querySelector(".d");
 const actions = document.querySelector(".actions");
+const hand = document.querySelector(".hand img");
 
 
 function myFunction() {
@@ -23,6 +24,7 @@ function myFunction() {
     rolesB.style.transform = "translateZ(100px)";
     rolesD.style.transform = "translateZ(100px)";
     login.style.transform = "translateZ(175px)";
+    document.getElementById("hand").setAttribute("style","opacity:0; -moz-opacity:0.5; filter:alpha(opacity=50)");
     container.addEventListener("mousemove", (e) => {
         let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
         let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
@@ -38,5 +40,6 @@ function myReLoad() {
     description.style.transform = "translateZ(0px)";
     roles.style.transform = "translateZ(0px)";
     login.style.transform = "translateZ(0px)";
+    document.getElementById("hand").setAttribute("style","opacity:1; -moz-opacity:0.5; filter:alpha(opacity=50)");
     document.location.reload();
 }
