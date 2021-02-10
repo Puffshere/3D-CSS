@@ -28,7 +28,7 @@ body {
     width: 35rem;
     border-radius: 30px;
     padding: 1rem 5rem;
-    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 20px rgba(123, 122, 122, 0.2), 0px 0px 50px rgba(131, 131, 131, 0.2);
 }
 
 .logo {
@@ -95,6 +95,17 @@ body {
 button.active {
     background: #585858;
     color: white;
+    transition: all 0.75s ease-out;
+}
+
+button.active1 {
+    background: linear-gradient(#e4e4e4f5,#bababa);
+    color: rgb(57, 57, 57);
+    transition: all 0.75s ease-out;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0 20px 20px rgba(75, 75, 75, 0.2), 0px 0px 50px rgba(92, 91, 91, 0.2);
+    transform-style: preserve-3d;
 }
 
 .login {

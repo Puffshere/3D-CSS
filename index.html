@@ -12,8 +12,12 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="container" id="container">
 		<div class="card">
+			<div class="roles">
+			<button class="active1" onclick="myFunction()">Grab</button>
+			<button class="active1" onclick="setTimeout(myReLoad, 0)">Drop</button>
+		</div>
 			<div class="logo">
 				<div class="circle"></div>
 				<img src="./images/CCC-logo.png" alt="">
@@ -22,10 +26,10 @@
 				<h1 class="title">Mentorship</h1>
 				<h3>CHOOSE YOUR ROLE AND EMBRACE THE PROCESS.</h3>
 				<div class="roles">
-					<button>Owner</button>
-					<button>Admin</button>
+					<button class="a">Owner</button>
+					<button class="b">Admin</button>
 					<button class="active">Mentee</button>
-					<button>Mentor</button>
+					<button class="d">Mentor</button>
 				</div>
 				<div class="login">
 					<button>LOGIN</button>
