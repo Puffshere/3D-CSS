@@ -24,9 +24,24 @@ body {
 
 .hand img {
     width: 25vh;
-    z-index: 2;
+    z-index: 1;
     transition: all 0.75s ease-out;
     position: absolute;
+}
+
+.logo2 {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
+    opacity: 91%;
+    z-index: 4;
+}
+
+.logo2 img {
+    width: 16vh;
+    transition: all 0.75s ease-out;
+    position: fixed;
+    margin-top: 1vh;
 }
 
 .container {
@@ -60,9 +75,34 @@ body {
 
 .logo img {
     width: 20rem;
-    z-index: 2;
+    z-index: 3;
     transition: all 0.75s ease-out;
 }
+
+.header {
+    background: linear-gradient(to left top, #ffffff, #050521);
+    width: 100vw;
+    height: 33vh;
+    position: absolute;
+    margin-top: -70vh;
+    transition: all 2s ease-out;
+}
+
+
+.stripe {
+    width: 100vw;
+    height: 2vh;
+    position: absolute;
+    margin-top: -36vh;
+    z-index: 0;
+    background: linear-gradient(.25turn, #b1b1b198, 10%, #44545b9e);
+    transition: all 2s ease-out;
+    box-shadow: 0 20px 20px rgba(123, 122, 122, 0.2), 0px 0px 50px rgba(131, 131, 131, 0.2);
+}
+
+
+
+
 
 .circle {
     width: 15rem;
@@ -183,3 +223,123 @@ button.active1:focus {
 .login button:focus {
     outline: none;
 }
+
+
+
+.fades {
+    color: rgb(34, 34, 34);
+    margin-top: 5vh;
+    text-size-adjust: 3vh;
+    text-shadow: .5px .5px .5px 2px rgb(34, 33, 33);
+
+}
+
+
+.fade-in {
+    position: absolute;
+    z-index: 5;
+    margin-left: 97vh;
+    animation: fadeIn ease 20s;
+    -webkit-animation: fadeIn ease 20s;
+    -moz-animation: fadeIn ease 20s;
+    -o-animation: fadeIn ease 20s;
+    -ms-animation: fadeIn ease 20s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+.fade-in {
+    z-index: 5;
+    letter-spacing: 2px;
+    position: absolute;
+    margin-left: 80vh;
+    margin-top: 15vh;
+    animation: fadeIn ease 20s;
+    -webkit-animation: fadeIn ease 20s;
+    -moz-animation: fadeIn ease 20s;
+    -o-animation: fadeIn ease 20s;
+    -ms-animation: fadeIn ease 20s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+.fade-in2 {
+    z-index: 5;
+    letter-spacing: 2px;
+    position: absolute;
+    margin-left: 80vh;
+    margin-top: 20vh;
+    animation: fadeIn ease 30s;
+    -webkit-animation: fadeIn ease 30s;
+    -moz-animation: fadeIn ease 30s;
+    -o-animation: fadeIn ease 30s;
+    -ms-animation: fadeIn ease 30s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
