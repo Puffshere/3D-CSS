@@ -13,6 +13,22 @@ body {
     perspective: 1000px;
 }
 
+.hand {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
+    position: absolute;
+    margin-left: -23%;
+    margin-top: -2%;
+}
+
+.hand img {
+    width: 25vh;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+    position: absolute;
+}
+
 .container {
     width: 50%;
     display: flex;
@@ -85,17 +101,37 @@ body {
     padding: 0.5rem 2rem;
     background: none;
     border: none;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px #1722267e;
     border-radius: 30px;
     cursor: pointer;
     font-weight: bold;
     color: rgb(40, 39, 39);
 }
+.roles button:hover {
+    outline: none;
+    background: linear-gradient(#e3e1e1f5,#cbcaca);
+}
+.roles button:active {
+    outline: none;
+    background: linear-gradient(#d2d1d1f5,#9d9d9d);
+}
+.roles button:focus {
+    outline: none;
+}
 
-button.active {
+button.active2 {
     background: #585858;
     color: white;
     transition: all 0.75s ease-out;
+}
+button.active2:hover {
+    outline: none;
+}
+button.active2:active {
+    outline: none;
+}
+button.active2:focus {
+    outline: none;
 }
 
 button.active1 {
@@ -106,6 +142,17 @@ button.active1 {
     cursor: pointer;
     box-shadow: 0 20px 20px rgba(75, 75, 75, 0.2), 0px 0px 50px rgba(92, 91, 91, 0.2);
     transform-style: preserve-3d;
+}
+button.active1:hover {
+    outline: none;
+    background: linear-gradient(#d8d8d8f5,#aeaeae);
+}
+button.active1:active {
+    outline: none;
+    background: linear-gradient(#cbcacaf5,#949393);
+}
+button.active1:focus {
+    outline: none;
 }
 
 .login {
@@ -124,4 +171,15 @@ button.active1 {
     font-weight: bolder;
     border: none;
     box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+}
+.login button:hover {
+    outline: none;
+    background:  linear-gradient(#c48778, #ab513a);
+}
+.login button:active {
+    outline: none;
+    background:  linear-gradient(#a46c5e, #93402b);
+}
+.login button:focus {
+    outline: none;
 }
