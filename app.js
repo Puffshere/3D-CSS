@@ -15,6 +15,11 @@ const stripe = document.querySelector(".stripe");
 // const wave = document.querySelector(".wave");
 const header = document.querySelector(".header");
 
+const mouseOverEvent = (e) => {
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
+    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+}
 
 function myFunction() {
     card.style.transition = "all 0.5s ease";
@@ -31,11 +36,13 @@ function myFunction() {
     // wave.style.transform = "translateZ(150px)";
     header.style.transform = "translateZ(150px)";
     document.getElementById("hand").setAttribute("style","opacity:0; -moz-opacity:0.5; filter:alpha(opacity=50)");
-    container.addEventListener("mousemove", (e) => {
-        let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
-        let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
-        card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-    });
+    container.addEventListener("mouseover", mouseOverEvent);
+    
+    // container.addEventListener("mousemove", (e) => {
+    //     let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
+    //     let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
+    //     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+    // });
 }
 
 function myReLoad() {
@@ -47,11 +54,11 @@ function myReLoad() {
     roles.style.transform = "translateZ(0px)";
     login.style.transform = "translateZ(0px)";
     stripe.style.transform = "translateZ(0px)";
-    // wave.style.transform = "translateZ(0px)";
     header.style.transform = "translateZ(0px)";
 
     document.getElementById("hand").setAttribute("style","opacity:1; -moz-opacity:0.5; filter:alpha(opacity=50)");
-    document.location.reload();
+    container.removeEventListener("mouseover", mouseOverEvent);
+
 }
 
 
