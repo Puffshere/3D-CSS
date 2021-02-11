@@ -33,16 +33,9 @@ function myFunction() {
     rolesD.style.transform = "translateZ(100px)";
     login.style.transform = "translateZ(175px)";
     stripe.style.transform = "translateZ(150px)";
-    // wave.style.transform = "translateZ(150px)";
     header.style.transform = "translateZ(150px)";
-    document.getElementById("hand").setAttribute("style","opacity:0; -moz-opacity:0.5; filter:alpha(opacity=50)");
+    document.getElementById("hand").setAttribute("style", "opacity:0; -moz-opacity:0.5; filter:alpha(opacity=50)");
     container.addEventListener("mouseover", mouseOverEvent);
-    
-    // container.addEventListener("mousemove", (e) => {
-    //     let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
-    //     let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
-    //     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-    // });
 }
 
 function myReLoad() {
@@ -55,29 +48,23 @@ function myReLoad() {
     login.style.transform = "translateZ(0px)";
     stripe.style.transform = "translateZ(0px)";
     header.style.transform = "translateZ(0px)";
-
-    document.getElementById("hand").setAttribute("style","opacity:1; -moz-opacity:0.5; filter:alpha(opacity=50)");
+    document.getElementById("hand").setAttribute("style", "opacity:1; -moz-opacity:0.5; filter:alpha(opacity=50)");
     container.removeEventListener("mouseover", mouseOverEvent);
 
 }
 
-
 var modal = document.getElementById("myModal");
-// Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
+
+btn.onclick = function () {
+    modal.style.display = "block";
 }
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+span.onclick = function () {
     modal.style.display = "none";
-  }
+}
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
