@@ -388,7 +388,7 @@ button.active1:focus {
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color: rgb(40, 40, 40);
     text-decoration: none;
     cursor: pointer;
   }
