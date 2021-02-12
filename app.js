@@ -9,10 +9,8 @@ const rolesC = document.querySelector(".active2");
 const rolesA = document.querySelector(".a");
 const rolesB = document.querySelector(".b");
 const rolesD = document.querySelector(".d");
-const actions = document.querySelector(".actions");
 const hand = document.querySelector(".hand img");
 const stripe = document.querySelector(".stripe");
-// const wave = document.querySelector(".wave");
 const header = document.querySelector(".header");
 
 const mouseOverEvent = (e) => {
@@ -50,7 +48,6 @@ function myReLoad() {
     header.style.transform = "translateZ(0px)";
     document.getElementById("hand").setAttribute("style", "opacity:1; -moz-opacity:0.5; filter:alpha(opacity=50)");
     container.removeEventListener("mouseover", mouseOverEvent);
-
 }
 
 var modal = document.getElementById("myModal");
