@@ -5,18 +5,42 @@ const logo = document.querySelector(".logo img");
 const login = document.querySelector(".login button");
 const description = document.querySelector(".info h3");
 const roles = document.querySelector(".roles");
-const rolesC = document.querySelector(".active2");
+const rolesC = document.querySelector(".c");
 const rolesA = document.querySelector(".a");
 const rolesB = document.querySelector(".b");
 const rolesD = document.querySelector(".d");
 const hand = document.querySelector(".hand img");
 const stripe = document.querySelector(".stripe");
 const header = document.querySelector(".header");
+const saveFromDashboard = document.querySelector(".firstName");
+const saveSecondName = document.querySelector("twoNames");
+const saveThirdName = document.querySelector("threeNames");
+const saveFourthName = document.querySelector("fourNames");
 
 const mouseOverEvent = (e) => {
     let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
     let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+}
+
+function addRole() {
+    document.getElementById("addRole").setAttribute("style", "background-color: #e76f51");
+}
+
+function addOneName() {
+    window.location.href = "http://localhost:8080/save";
+}
+
+function addTwoNames() {
+    window.location.href = "http://localhost:8080/saveTwo";
+}
+
+function addThreeNames() {
+    window.location.href = "http://localhost:8080/saveThree";
+}
+
+function addFourNames() {
+    window.location.href = "http://localhost:8080/saveFour";
 }
 
 function myFunction() {
@@ -25,8 +49,8 @@ function myFunction() {
     logo.style.transform = "translateZ(200px) rotateZ(-20deg)";
     description.style.transform = "translateZ(125px)";
     roles.style.transform = "translateZ(100px)";
-    rolesC.style.transform = "translateZ(120px)";
-    rolesA.style.transform = "translateZ(100px)";
+    rolesA.style.transform = "translateZ(120px)";
+    rolesC.style.transform = "translateZ(100px)";
     rolesB.style.transform = "translateZ(100px)";
     rolesD.style.transform = "translateZ(100px)";
     login.style.transform = "translateZ(175px)";
@@ -54,6 +78,7 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
+
 btn.onclick = function () {
     modal.style.display = "block";
 }
@@ -64,4 +89,12 @@ window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+
+
+var loginFromModal = document.getElementById("myLogin");
+
+loginFromModal.onclick = function () {
+    window.location.href = "http://localhost:8080/dashboard";
 }

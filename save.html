@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>save</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header"></div>
+    <div class="stripe"></div>
+    <div class="wave"></div>
+
+    <div class="container">
+        <div class="card dashboard">
+
+            <div class="logo">
+                <div class="circle"></div>
+                <img src="./images/CCC-logo.png" alt="">
+            </div>
+
+            <div>
+                <div class="nameOfCommand">
+                    <h1>Skywalker Mentorship</h1>
+                </div>
+            </div>
+            <div class="participants">
+                <label for="participants">Participants</label><br>
+                <select name="members" class="addParticipants">
+                    <option value="" disabled selected hidden>Add Participants</option>
+                    <option value="henry">Henry</option>
+                    <option value="anthony">Anthony</option>
+                    <option value="dean">Dean</option>
+                    <option value="shawn">Shawn</option>
+                </select>
+            </div>
+            <div class="login saveBtn">
+                <button onclick="addTwoNames()" class="twoNames">
+                    ADD
+                </button>
+            </div>
+        </div>
+        <div class="names">
+            <h2 class="welcome">
+                WELCOME!
+            </h2>
+            <br>
+            <h3 class="name1">Henry</h3>
+        </div>
+    </div>
+	<div id="root"></div>
+	<script src="./app.js"></script>
+</body>
+
+</html>
