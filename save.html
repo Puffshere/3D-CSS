@@ -12,12 +12,19 @@
 </head>
 
 <body>
-
     <div class="header"></div>
     <div class="stripe"></div>
     <div class="wave"></div>
+    <div class="studentsPic">
+		<img id="students" src="./images/students.png" alt="">
+	</div>
+    <div class="saveBtn">
+        <button class="exitBtn" id="exitButton" onclick="exitFunction()">
+            EXIT
+        </button>
+    </div>
 
-    <div class="container">
+    <div class="container pushRight">
         <div class="card dashboard">
 
             <div class="logo">
@@ -29,6 +36,12 @@
                 <div class="nameOfCommand">
                     <h1>Skywalker Mentorship</h1>
                 </div>
+            </div>
+            <div class="roles">
+                <!-- <button onclick="addRole()" id="addRole" class="a">Owner</button> -->
+                <button onclick="addRole()" class="b">Admin</button>
+                <button onclick="addRole()" class="c">Mentee</button>
+                <button onclick="addRole()" class="d">Mentor</button>
             </div>
             <div class="participants">
                 <label for="participants">Participants</label><br>
@@ -46,9 +59,9 @@
                 </button>
             </div>
         </div>
-        <div class="names">
+        <div class="mentorNames">
             <h2 class="welcome">
-                WELCOME!
+                WELCOME MENTORS!
             </h2>
             <br>
             <h3 class="name1">Henry</h3>

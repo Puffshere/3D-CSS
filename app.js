@@ -5,10 +5,10 @@ const logo = document.querySelector(".logo img");
 const login = document.querySelector(".login button");
 const description = document.querySelector(".info h3");
 const roles = document.querySelector(".roles");
-const rolesC = document.querySelector(".c");
-const rolesA = document.querySelector(".a");
-const rolesB = document.querySelector(".b");
-const rolesD = document.querySelector(".d");
+// const rolesA = document.querySelector(".a");
+// const rolesB = document.querySelector(".b");
+// const rolesC = document.querySelector(".c");
+// const rolesD = document.querySelector(".d");
 const hand = document.querySelector(".hand img");
 const stripe = document.querySelector(".stripe");
 const header = document.querySelector(".header");
@@ -16,6 +16,7 @@ const saveFromDashboard = document.querySelector(".firstName");
 const saveSecondName = document.querySelector("twoNames");
 const saveThirdName = document.querySelector("threeNames");
 const saveFourthName = document.querySelector("fourNames");
+const exit = document.querySelector("exitBtn");
 
 const mouseOverEvent = (e) => {
     let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
@@ -23,8 +24,18 @@ const mouseOverEvent = (e) => {
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 }
 
-function addRole() {
-    document.getElementById("addRole").setAttribute("style", "background-color: #e76f51");
+function exitFunction() {
+    window.location.href = "http://localhost:8080";
+}
+
+function addRole1() {
+    document.getElementById("addRole1").setAttribute("style", "background-color: #e76f51");
+}
+function addRole2() {
+    document.getElementById("addRole2").setAttribute("style", "background-color: #e76f51");
+}
+function addRole3() {
+    document.getElementById("addRole3").setAttribute("style", "background-color: #e76f51");
 }
 
 function addOneName() {
@@ -49,10 +60,10 @@ function myFunction() {
     logo.style.transform = "translateZ(200px) rotateZ(-20deg)";
     description.style.transform = "translateZ(125px)";
     roles.style.transform = "translateZ(100px)";
-    rolesA.style.transform = "translateZ(120px)";
-    rolesC.style.transform = "translateZ(100px)";
-    rolesB.style.transform = "translateZ(100px)";
-    rolesD.style.transform = "translateZ(100px)";
+    // rolesA.style.transform = "translateZ(120px)";
+    // rolesB.style.transform = "translateZ(100px)";
+    // rolesC.style.transform = "translateZ(100px)";
+    // rolesD.style.transform = "translateZ(100px)";
     login.style.transform = "translateZ(175px)";
     stripe.style.transform = "translateZ(150px)";
     header.style.transform = "translateZ(150px)";
@@ -67,6 +78,10 @@ function myReLoad() {
     logo.style.transform = "translateZ(0px) rotateZ(0deg)";
     description.style.transform = "translateZ(0px)";
     roles.style.transform = "translateZ(0px)";
+    // rolesA.style.transform = "translateZ(20px)";
+    // rolesB.style.transform = "translateZ(0px)";
+    // rolesC.style.transform = "translateZ(0px)";
+    // rolesD.style.transform = "translateZ(0px)";
     login.style.transform = "translateZ(0px)";
     stripe.style.transform = "translateZ(0px)";
     header.style.transform = "translateZ(0px)";
