@@ -57,6 +57,10 @@ function adminDash() {
     window.location.href = "http://localhost:8080/adminDashboard";
 }
 
+function toSlackAllow() {
+    window.location.href = "http://localhost:8080/slackAllow";
+}
+
 function toDash() {
     window.location.href = "http://localhost:8080/dashboard";
 }

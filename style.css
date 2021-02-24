@@ -547,7 +547,42 @@ button.active1:focus {
     outline: none;
 }
 
+.login-confirm1 button {
+    transition: all 0.75s ease-out;
+    letter-spacing: 1px;
+    width: 6%;
+    background: #007a5a;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bolder;
+    border: none;
+    box-shadow: 0 20px 20px rgb(0 0 0 / 20%), 0px 0px 50px rgb(0 0 0 / 20%);
+    top: 44.5rem;
+    left: 45.5rem;
+    height: 45px;
+    max-height: 36.7px;
+
+}
+.login-confirm1 button:hover {
+    outline: none;
+    background: #014d39;
+}
+.login-confirm1 button:active {
+    outline: none;
+    background: #003527;
+}
+.login-confirm1 button:focus {
+    outline: none;
+}
+
 .input-styling {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.input-styling1 {
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
@@ -1051,4 +1086,9 @@ button.active1:focus {
 .logOut {
     top: 2rem;
     right: 25rem;
+}
+
+.allowSlack {
+    position: absolute;
+    z-index: 5;
 }
