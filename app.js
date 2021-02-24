@@ -15,6 +15,7 @@ const saveThirdName = document.querySelector("threeNames");
 const saveFourthName = document.querySelector("fourNames");
 const exit = document.querySelector("exitBtn");
 const mentorInfo = document.querySelector("mentorInfoHenry");
+const ht = document.querySelector("hT");
 
 const mouseOverEvent = (e) => {
     let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
@@ -91,8 +92,7 @@ function myReLoad() {
     header.style.transform = "translateZ(0px)";
     document.getElementById("hand").setAttribute("style", "opacity:1; -moz-opacity:0.5; filter:alpha(opacity=50)");
     container.removeEventListener("mouseover", mouseOverEvent);
-    // hiddenWords.style.transition = "opacity 0";
-    var element = document.getElementById("hT"); element.classList.add("fade-out");
+    var element = document.getElementById("hT"); element.classList.remove("fade-in");
 }
 
 var modal = document.getElementById("myModal");
