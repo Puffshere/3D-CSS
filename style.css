@@ -147,6 +147,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: -8rem;
+    opacity: .5;
 }
 
 .logo1 img {
@@ -661,7 +663,16 @@ button.active1:focus {
     height: 200px;
     margin: 70px auto;
     perspective: 1000px;
+    background-color: rgba(112, 123, 135, 0.372);
+    border-radius: 30px;
+
 }
+/* .thumb1 h2 {
+    width: 400px;
+    height: 200px;
+    margin: 70px auto;
+    perspective: 1000px;
+} */
 
 .thumb1 a {
     display: block;
@@ -737,6 +748,8 @@ button.active1:focus {
     height: 200px;
     margin: 70px auto;
     perspective: 1000px;
+    background-color: rgba(112, 123, 135, 0.372);
+    border-radius: 30px;
 }
 
 .thumb2 a {
@@ -812,6 +825,7 @@ button.active1:focus {
     position: absolute;
     z-index: -1;
     letter-spacing: 1px;
+    margin-left: 2rem;
 }
 
 .behind1 {
@@ -820,6 +834,7 @@ button.active1:focus {
     letter-spacing: 1px;
     margin-top: 25px;
     left: 8rem;
+    margin-left: 2rem;
 }
 
 .adminDash {
@@ -868,4 +883,74 @@ button.active1:focus {
     transition: all 2s ease-out;
     box-shadow: 0 20px 20px rgba(123, 122, 122, 0.2), 0px 0px 50px rgba(131, 131, 131, 0.2);
     right: 20rem;
+}
+
+.horizontalLine {
+    width: 20rem;
+    height: 2vh;
+    position: absolute;
+    margin-top: -83vh;
+    z-index: 0;
+    background: linear-gradient(.25turn, #b1b1b198, 10%, #44545b9e);
+    transition: all 2s ease-out;
+    box-shadow: 0 20px 20px rgba(123, 122, 122, 0.2), 0px 0px 50px rgba(131, 131, 131, 0.2);
+    right: 0rem;
+}
+
+.menteeHeader {
+    position: absolute;
+    right: 5rem;
+    top: 1.5rem;
+    color: rgb(45, 44, 44);
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px 10px rgb(45, 44, 44);
+}
+
+.menteeNamesList {
+    position: absolute;
+    right: 8rem;
+    top: 6rem;
+    color: rgb(45, 44, 44);
+    letter-spacing: 1px;
+}
+
+.mNL {
+    padding-bottom: .5rem;
+    cursor: pointer;
+}
+
+.xStyle {
+    cursor: pointer;
+}
+
+.x img {
+    width: 1rem;
+    position: absolute;
+    z-index: -5;
+    left: 20.5rem;
+    top: 11.25rem;
+}
+
+.x1 img {
+    width: 1rem;
+    position: absolute;
+    z-index: -5;
+    left: 19.5rem;
+    top: 32.5rem;
+}
+
+.x2 img {
+    width: 1rem;
+    position: absolute;
+    z-index: -5;
+    right: 17.5rem;
+    top: 100px;
+}
+
+.x3 img {
+    width: 1rem;
+    position: absolute;
+    z-index: -5;
+    right: 17.5rem;
+    top: 128px;
 }
