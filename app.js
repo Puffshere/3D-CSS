@@ -2,13 +2,10 @@ const card = document.querySelector(".card");
 const container = document.querySelector(".container");
 const title = document.querySelector(".title");
 const logo = document.querySelector(".logo img");
-const login = document.querySelector(".login button");
+const login = document.querySelector(".save button");
 const description = document.querySelector(".info h3");
 const roles = document.querySelector(".roles");
-// const rolesA = document.querySelector(".a");
-// const rolesB = document.querySelector(".b");
-// const rolesC = document.querySelector(".c");
-// const rolesD = document.querySelector(".d");
+const hiddenWords = document.querySelector(".hiddenText");
 const hand = document.querySelector(".hand img");
 const stripe = document.querySelector(".stripe");
 const header = document.querySelector(".header");
@@ -17,6 +14,7 @@ const saveSecondName = document.querySelector("twoNames");
 const saveThirdName = document.querySelector("threeNames");
 const saveFourthName = document.querySelector("fourNames");
 const exit = document.querySelector("exitBtn");
+const mentorInfo = document.querySelector("mentorInfoHenry");
 
 const mouseOverEvent = (e) => {
     let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
@@ -54,21 +52,31 @@ function addFourNames() {
     window.location.href = "http://localhost:8080/saveFour";
 }
 
+function adminDash() {
+    window.location.href = "http://localhost:8080/adminDashboard";
+}
+
+function toDash() {
+    window.location.href = "http://localhost:8080/dashboard";
+}
+
+function myMentorInfo() {
+    document.getElementById("mInfo").setAttribute("style", "opacity:0; -moz-opacity:0.5; filter:alpha(opacity=50)");
+}
+
 function myFunction() {
     card.style.transition = "all 0.5s ease";
     title.style.transform = "translateZ(150px)";
     logo.style.transform = "translateZ(200px) rotateZ(-20deg)";
     description.style.transform = "translateZ(125px)";
     roles.style.transform = "translateZ(100px)";
-    // rolesA.style.transform = "translateZ(120px)";
-    // rolesB.style.transform = "translateZ(100px)";
-    // rolesC.style.transform = "translateZ(100px)";
-    // rolesD.style.transform = "translateZ(100px)";
     login.style.transform = "translateZ(175px)";
     stripe.style.transform = "translateZ(150px)";
-    header.style.transform = "translateZ(150px)";
+    header.style.transform = "translateZ(160px)";
+    hiddenWords.style.transform = "opacity 1";
     document.getElementById("hand").setAttribute("style", "opacity:0; -moz-opacity:0.5; filter:alpha(opacity=50)");
     container.addEventListener("mouseover", mouseOverEvent);
+    var element = document.getElementById("hT"); element.classList.add("fade-in");
 }
 
 function myReLoad() {
@@ -78,15 +86,13 @@ function myReLoad() {
     logo.style.transform = "translateZ(0px) rotateZ(0deg)";
     description.style.transform = "translateZ(0px)";
     roles.style.transform = "translateZ(0px)";
-    // rolesA.style.transform = "translateZ(20px)";
-    // rolesB.style.transform = "translateZ(0px)";
-    // rolesC.style.transform = "translateZ(0px)";
-    // rolesD.style.transform = "translateZ(0px)";
     login.style.transform = "translateZ(0px)";
     stripe.style.transform = "translateZ(0px)";
     header.style.transform = "translateZ(0px)";
     document.getElementById("hand").setAttribute("style", "opacity:1; -moz-opacity:0.5; filter:alpha(opacity=50)");
     container.removeEventListener("mouseover", mouseOverEvent);
+    // hiddenWords.style.transition = "opacity 0";
+    var element = document.getElementById("hT"); element.classList.add("fade-out");
 }
 
 var modal = document.getElementById("myModal");
@@ -111,5 +117,10 @@ window.onclick = function (event) {
 var loginFromModal = document.getElementById("myLogin");
 
 loginFromModal.onclick = function () {
-    window.location.href = "http://localhost:8080/dashboard";
+    window.location.href = "http://localhost:8080/workspaceSelect";
 }
+
+
+
+
+

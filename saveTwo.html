@@ -32,6 +32,11 @@
                 <img src="./images/CCC-logo.png" alt="">
             </div>
 
+            <!-- <div class="">
+                <img class="removeImg" src="./images/images.png" alt="">
+            </div> -->
+
+
             <div>
                 <div class="nameOfCommand">
                     <h1>Skywalker Mentorship</h1>
@@ -39,12 +44,12 @@
             </div>
             <div class="roles">
                 <!-- <button onclick="addRole()" id="addRole" class="a">Owner</button> -->
-                <button onclick="addRole()" class="b">Admin</button>
-                <button onclick="addRole()" class="c">Mentee</button>
-                <button onclick="addRole()" class="d">Mentor</button>
+                <button onclick="addRole1()" id="addRole1" class="b">Admin</button>
+                <button onclick="addRole2()" id="addRole2" class="c">Mentee</button>
+                <button onclick="addRole3()" id="addRole3" class="d">Mentor</button>
             </div>
             <div class="participants">
-                <label for="participants">Participants</label><br>
+                <label for="participants"></label><br>
                 <select name="members" class="addParticipants">
                     <option value="" disabled selected hidden>Add Participants</option>
                     <option value="henry">Henry</option>
@@ -53,15 +58,22 @@
                     <option value="shawn">Shawn</option>
                 </select>
             </div>
-            <div class="login saveBtn">
-                <button onclick="addThreeNames()" class="">
-                    ADD
+            <div class="loginMargin login saveBtn">
+                <button onclick="addThreeNames()" class="twoNames">
+                    CONFIRM
                 </button>
             </div>
+            <div class="finsihBtn login">
+                <button onclick="adminDash()" class="">
+                    FINISHED
+                </button>
+            </div>
+
+           
         </div>
         <div class="names">
             <h2 class="welcome">
-                WELCOME MENTEES!
+                CURRENT MENTEES!
             </h2>
             <br>
             <!-- <h3 class="name1">Henry</h3> -->
@@ -69,7 +81,7 @@
         </div>
         <div class="mentorNames">
             <h2 class="welcome">
-                WELCOME MENTORS!
+                CURRENT MENTORS!
             </h2>
             <br>
             <h3 class="name1">Henry</h3>
