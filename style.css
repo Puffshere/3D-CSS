@@ -147,7 +147,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: -8rem;
+    margin-right: 15rem;
     opacity: .5;
 }
 
@@ -663,16 +663,10 @@ button.active1:focus {
     height: 200px;
     margin: 70px auto;
     perspective: 1000px;
-    background-color: rgba(112, 123, 135, 0.372);
-    border-radius: 30px;
-
+    background-color: rgb(191, 191, 191);
+    position: absolute;
+    z-index: 3;  
 }
-/* .thumb1 h2 {
-    width: 400px;
-    height: 200px;
-    margin: 70px auto;
-    perspective: 1000px;
-} */
 
 .thumb1 a {
     display: block;
@@ -686,7 +680,8 @@ button.active1:focus {
     transform-style: preserve-3d;
     transition: all 0.5s;
     box-shadow: 5px 5px 5px 20px rgb(48, 48, 48);
-    text-rendering: Henry;
+    position: absolute;
+    z-index: 3;   
 }
 
 .thumb1:hover a {
@@ -719,7 +714,6 @@ button.active1:focus {
     text-align: center;
     transform: rotateX(-89.99deg);
     transform-origin: top;
-    z-index: 1;
 }
 
 .thumb1 a:before {
@@ -730,7 +724,6 @@ button.active1:focus {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
     transition: all 0.5s;
     opacity: 0.15;
     transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -743,13 +736,18 @@ button.active1:focus {
     transform: rotateX(0) translateZ(-60px) scale(0.85);
 }
 
+
+
+
 .thumb2 {
     width: 400px;
     height: 200px;
     margin: 70px auto;
     perspective: 1000px;
-    background-color: rgba(112, 123, 135, 0.372);
+    background-color: rgb(191, 191, 191);
     border-radius: 30px;
+    position: absolute;
+    z-index: -5;
 }
 
 .thumb2 a {
@@ -765,6 +763,8 @@ button.active1:focus {
     transition: all 0.5s;
     box-shadow: 5px 5px 5px 20px rgb(48, 48, 48);
     text-rendering: Henry;
+    position: relative;
+    z-index: 3;
 }
 
 .thumb2:hover a {
@@ -797,7 +797,7 @@ button.active1:focus {
     text-align: center;
     transform: rotateX(-89.99deg);
     transform-origin: top;
-    z-index: 1;
+    z-index: 2;
 }
 
 .thumb2 a:before {
@@ -821,16 +821,99 @@ button.active1:focus {
     transform: rotateX(0) translateZ(-60px) scale(0.85);
 }
 
+
+.thumb3 {
+    width: 400px;
+    height: 200px;
+    margin: 70px auto;
+    perspective: 1000px;
+    background-color: rgb(191, 191, 191);
+    position: absolute;
+    z-index: -5;
+    top: 21.25rem;
+}
+
+.thumb3 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/dean.png");
+    background-color: white;
+    background-size: 0, contain;
+    background-repeat: no-repeat;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+    box-shadow: 5px 5px 5px 20px rgb(48, 48, 48);
+    text-rendering: Henry;
+    position: relative;
+    z-index: 3;
+}
+
+.thumb3:hover a {
+    transform: rotateX(80deg);
+    transform-origin: bottom;
+}
+
+.thumb3 a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 36px;
+    background: inherit;
+    background-size: cover, cover;
+    background-position: bottom;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+
+.thumb3 a span {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    font: bold 12px/36px "Open Sans";
+    text-align: center;
+    transform: rotateX(-89.99deg);
+    transform-origin: top;
+    z-index: 2;
+}
+
+.thumb3 a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    opacity: 0.15;
+    transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+    transform-origin: bottom;
+}
+
+.thumb3:hover a:before {
+    opacity: 1;
+    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+    transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
 .behind {
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     letter-spacing: 1px;
     margin-left: 2rem;
 }
 
 .behind1 {
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     letter-spacing: 1px;
     margin-top: 25px;
     left: 8rem;
@@ -926,7 +1009,7 @@ button.active1:focus {
 .x img {
     width: 1rem;
     position: absolute;
-    z-index: -5;
+    z-index: 1;
     left: 20.5rem;
     top: 11.25rem;
 }
@@ -934,7 +1017,7 @@ button.active1:focus {
 .x1 img {
     width: 1rem;
     position: absolute;
-    z-index: -5;
+    z-index: 1;
     left: 19.5rem;
     top: 32.5rem;
 }
